@@ -14,29 +14,37 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
-                <div class="text-gray-900" style="font-size: 50px; background-color: #BF4D4D; padding: 40px; width: 100%; height: 250px; display: flex; align-items: center;">
-                <a href="">
+            <div class="text-gray-900" style="background-color: #BF4D4D; padding: 40px; width: 100%; height: 250px; display: flex; align-items: center; justify-content: space-between;">
+                    <a href="course/content" style="font-size: 50px; color: white; text-decoration: none; font-weight : bold">
                         {{ __("HTML") }}
-                        {{ __("full course 9hr conducted by john 50 videos") }}
                     </a>
+                    <div style="display: flex; flex-direction: column; font-size: 30px; text-align: right;">
+                        <h1>Full course 9hr</h1>
+                        <h1>Conducted By Sajith</h1>
+                    </div>
                 </div>
 
 
-                <div class="text-gray-900" style="font-size: 50px; background-color: #ECDFCC; padding: 40px; width: 100%; height: 250px; display: flex; align-items: center;">
-                <a href="">
+                <div class="text-gray-900" style="background-color: #ECDFCC; padding: 40px; width: 100%; height: 250px; display: flex; align-items: center; justify-content: space-between;">
+                    <a href="course/content" style="font-size: 50px; color: white; text-decoration: none; font-weight : bold">
                         {{ __("CSS") }}
-                        {{ __("full course 9hr conducted by john 50 videos") }}
                     </a>
+                    <div style="display: flex; flex-direction: column; font-size: 30px; text-align: right;">
+                        <h1>Full course 9hr</h1>
+                        <h1>Conducted By Anura </h1>
+                    </div>
                 </div>
 
 
-                <div class="text-gray-900" style="font-size: 50px; background-color: #598A8D; padding: 40px; width: 100%; height: 250px; display: flex; align-items: center;">
-                    <a href="">
+                <div class="text-gray-900" style="background-color: #598A8D; padding: 40px; width: 100%; height: 250px; display: flex; align-items: center; justify-content: space-between;">
+                    <a href="course/content" style="font-size: 50px; color: white; text-decoration: none; font-weight : bold">
                         {{ __("JAVASCRIPT") }}
-                        {{ __("full course 9hr conducted by john 50 videos") }}
                     </a>
+                    <div style="display: flex; flex-direction: column; font-size: 30px; text-align: right;">
+                        <h1>Full course 9hr</h1>
+                        <h1>Conducted by Ranil</h1>
+                    </div>
                 </div>
-
 
             </div>
 
