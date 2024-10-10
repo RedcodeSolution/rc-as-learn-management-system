@@ -3,7 +3,7 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <form method="POST" action="{{ route('login') }}" style="max-width: 400px; margin: 0 auto; padding: 40px; background-color:white; ">
+    <form method="POST" action="{{ route('login') }}" class="max-w-md mx-auto p-10 bg-white ">
         @csrf
         <!-- Title -->
         <h2 style="font-size: 40px; font-weight: bold; color: #333; text-align: center; margin-bottom: 5px;">Login</h2>
@@ -31,7 +31,7 @@
 
         <!-- Login Button -->
         <div class="flex items-center justify-center mt-6">
-            <x-primary-button class="ms-3" style="background-color: #2bb9c2; border-radius: 38px; padding: 12px 24px; font-size: 16px; color: white; cursor: pointer;">
+            <x-primary-button class="ms-3" style=" border-radius:70px; padding: 12px 24px; font-size: 16px; color: white; cursor: pointer;">
                 {{ __('Login') }}
             </x-primary-button>
         </div>
@@ -61,6 +61,7 @@
         <!-- Sign Up Link -->
         <div class="flex items-center justify-center mt-4">
             <p style="font-size: 14px; color: #777;">Don't have an account?
+
             <a href="{{ route('register') }}" style="color:#ff9999;font-weight: bold;padding-left: 5px;">Sign up</a></p>
         </div>
     </form>
