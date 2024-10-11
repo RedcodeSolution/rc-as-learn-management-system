@@ -1,12 +1,4 @@
 <x-app-layout>
-    <x-slot name="header">
-        <div class="flex justify-end items-center">
-            <a href="/course/create" class="text-black px-4 py-2 rounded">
-                Create
-            </a>
-        </div>
-    </x-slot>
-
 
 
     <div class="py-12">

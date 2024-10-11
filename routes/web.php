@@ -18,10 +18,6 @@ Route::get('/course', function () {
     return view('Course.index');
 })->middleware(['auth', 'verified'])->name('course');
 
-Route::get('/course/create', function () {
-    return view('Course.create');
-})->middleware(['auth', 'verified'])->name('course.create');
-
 
 Route::get('/course/html', function () {
     return view('Course.html');

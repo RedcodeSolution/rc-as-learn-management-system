@@ -2,7 +2,7 @@
 
 
     <section class="text-center py-10">
-        <h1 style="font-size: 5vw" class="text-4xl font-bold text-gray-800 mb-8">Your Progress</h1>
+        <h1 style="font-size: 4vw" class="text-4xl font-bold text-gray-800 mb-8">Your Progress</h1>
 
         <!-- Progress cards -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
