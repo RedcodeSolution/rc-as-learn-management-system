@@ -22,6 +22,15 @@ Route::get('/course/create', function () {
     return view('Course.create');
 })->middleware(['auth', 'verified'])->name('course.create');
 
+Route::get('/course/content', function () {
+    return view('Course.content');
+})->middleware(['auth', 'verified'])->name('course.content');
+
+
+Route::get('/course/progress', function () {
+    return view('Course.progress');
+})->middleware(['auth', 'verified'])->name('course.progress');
+
 //
 
 
