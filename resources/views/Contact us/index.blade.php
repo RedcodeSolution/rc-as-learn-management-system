@@ -17,7 +17,14 @@
 
                         <!-- Right Side (Contact Form) -->
                         <div class="w-full md:w-1/2 p-6">
-                            <form class="space-y-6 p-4 bg-gray-50 rounded-lg shadow-md">
+                            @if (session('success'))
+                            <div id="success-message" class="bg-green-100 text-green-700 p-4 rounded-md mb-4">
+                                {{ session('success') }}
+                            </div>
+                            @endif
+
+                            <form method="POST" action="{{ route('contact.submit') }} " class="space-y-6 p-4 bg-gray-50 rounded-lg shadow-md">
+                                @csrf
                                 <div>
                                     <input type="text" name="name" placeholder="Name"
                                            class="border border-gray-300 rounded-md p-2 w-full " required />
@@ -39,9 +46,7 @@
                                     <x-primary-button type="submit">
                                         SUBMIT
                                     </x-primary-button>
-
                                 </div>
-
                             </form>
                         </div>
                     </div>
@@ -49,4 +54,16 @@
             </div>
         </div>
     </div>
+
+    <!-- hide success message after 1 seconds -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const successMessage = document.getElementById('success-message');
+            if (successMessage) {
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 1000); // 1 seconds
+            }
+        });
+    </script>
 </x-app-layout>

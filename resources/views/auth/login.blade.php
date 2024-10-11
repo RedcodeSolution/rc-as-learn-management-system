@@ -45,18 +45,18 @@
                     @endif
         </div>
 
-        <!-- Divider -->
+        <!-- Divider
         <div style="display: flex; align-items: center; justify-content: center; margin-top: 30px;">
             <hr style="width: 100%; border: none; border-top: 1px solid #ddd; position: relative;" />
             <span style="position: absolute; background-color: white; padding: 0 10px; color: #777; font-size: 14px;">Or Continue With</span>
         </div>
 
-        <!-- Google Login -->
+         Google Login
         <div class="flex items-center justify-center mt-4 " style= "margin-top: 24px;">
             <a href="#" class="google-login-button" style="display: inline-flex; align-items: center; border: 1px solid #ddd; padding: 8px 24px; border-radius: 22px; font-size: 14px; color: #555; text-decoration: none;">
                 <img src="{{ asset('images/google-icon.png') }}" alt="Google" style="width: 24px; height: 24px; margin-right: 8px;" /> Login with Google
             </a>
-        </div>
+        </div> -->
 
         <!-- Sign Up Link -->
         <div class="flex items-center justify-center mt-4">
