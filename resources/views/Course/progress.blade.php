@@ -1,9 +1,68 @@
 <x-app-layout>
-<div class="py-12">
+    <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    {{ __("You are in progress") }}
+                    <section class="text-center py-10">
+                        <h1 style="font-size: 4vw" class="text-4xl font-bold text-gray-800 mb-8">Your Progress</h1>
+
+                        <!-- Progress cards -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+
+                            <!-- HTML Progress -->
+                            <div class="flex items-center space-x-4">
+                                <div class="relative">
+                                    <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 36 36">
+                                        <path fill="none" stroke="#e5e7eb" stroke-width="3" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="10, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831" />
+                                    </svg>
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <p class="text-sm">1 of 50</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="text-blue-500 font-bold text-lg">HTML</h2>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+
+                            <!-- CSS Progress -->
+                            <div class="flex items-center space-x-4">
+                                <div class="relative">
+                                    <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 36 36">
+                                        <path fill="none" stroke="#e5e7eb" stroke-width="3" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="10, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831" />
+                                    </svg>
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <p class="text-sm">1 of 45</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="text-red-500 font-bold text-lg">CSS</h2>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+
+                            <!-- JavaScript Progress -->
+                            <div class="flex items-center space-x-4">
+                                <div class="relative">
+                                    <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 36 36">
+                                        <path fill="none" stroke="#e5e7eb" stroke-width="3" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="10, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831" />
+                                    </svg>
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <p class="text-sm">1 of 70</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="text-yellow-500 font-bold text-lg">JavaScript</h2>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </section>
                 </div>
             </div>
         </div>
