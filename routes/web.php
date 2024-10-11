@@ -22,9 +22,21 @@ Route::get('/course/create', function () {
     return view('Course.create');
 })->middleware(['auth', 'verified'])->name('course.create');
 
-Route::get('/course/content', function () {
-    return view('Course.content');
-})->middleware(['auth', 'verified'])->name('course.content');
+
+Route::get('/course/html', function () {
+    return view('Course.html');
+})->middleware(['auth', 'verified'])->name('course.html');
+
+
+Route::get('/course/css', function () {
+    return view('Course.css');
+})->middleware(['auth', 'verified'])->name('course.css');
+
+
+Route::get('/course/javascript', function () {
+    return view('Course.javascript');
+})->middleware(['auth', 'verified'])->name('course.javascript');
+
 
 
 Route::get('/course/progress', function () {
