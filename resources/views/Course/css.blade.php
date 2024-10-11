@@ -37,7 +37,7 @@
                         }
                     }">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- Rust Lessons Section -->
+                            <!--  Lessons Section -->
                             <div>
                                 <h3 class="pb-3 font-medium text-gray-800">CSS Basics</h3>
                                 <div class="text-gray-600">
@@ -51,7 +51,7 @@
                                 </div>
                             </div>
 
-                            <!-- Cargo Lessons Section -->
+                            <!--  Lessons Section -->
                             <div>
                                 <h3 class="pb-3 font-medium text-gray-800">CSS ADVANCE</h3>
                                 <div class="text-gray-600">
