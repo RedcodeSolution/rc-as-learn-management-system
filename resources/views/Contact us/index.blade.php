@@ -23,7 +23,7 @@
                             </div>
                             @endif
 
-                            <form method="POST" action="{{ route('contact.submit') }} " class="space-y-6 p-4 bg-gray-50 rounded-lg shadow-md">
+                            <form method="POST" action="{{ route('contact.submit') }} " class="space-y-6 p-4 bg-gray-50 rounded-lg" style="background-color: #86D293;">
                                 @csrf
                                 <div>
                                     <input type="text" name="name" placeholder="Name"
