@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,18 +45,21 @@ Route::get('/course/quiz', function () {
     return view('Course.quiz');
 })->middleware(['auth', 'verified'])->name('course.quiz');
 
+
+
 //
 
 
 Route::get('/contactUs', function () {
     return view('Contact Us.index');
 })->middleware(['auth', 'verified'])->name('contactUs');
-
+Route::post('/contact', [ContactController::class, 'submitForm'])->name('contact.submit');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
 });
 
 require __DIR__.'/auth.php';
