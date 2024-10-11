@@ -1,7 +1,11 @@
 
 <x-app-layout>
     <div class="overflow-hidden container mx-auto flex flex-col items-center justify-center py-16">
-        <h1 style="font-size:5vw; padding-left: 15%" class="text-5xl font-bold text-gray-800 text-center ms-4 mb-12">Learn to Code</h1>
+        <h1 style="left: 40vw;
+    top: 120px;
+    position: absolute;
+    font-size: 5vw;
+    padding-left: 15%;" class="text-5xl font-bold text-gray-800 text-center ms-4 mb-12">Learn to Code</h1>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <!-- Left Column: Image -->
@@ -22,4 +26,6 @@
         </div>
     </div>
 </x-app-layout>
+
+
 
