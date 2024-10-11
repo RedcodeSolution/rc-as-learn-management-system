@@ -5,10 +5,14 @@
             <a href="/course/progress" class="text-black px-4 py-2 rounded">
                 Progress
             </a>
+
+            <a href="/course/quiz" class="text-black px-8 py-2 rounded">
+                Quiz
+            </a>
         </div>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-12" style="background-color: #3AAFA9;">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">

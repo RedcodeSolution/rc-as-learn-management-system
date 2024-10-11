@@ -39,6 +39,11 @@ Route::get('/course/progress', function () {
     return view('Course.progress');
 })->middleware(['auth', 'verified'])->name('course.progress');
 
+
+Route::get('/course/quiz', function () {
+    return view('Course.quiz');
+})->middleware(['auth', 'verified'])->name('course.quiz');
+
 //
 
 

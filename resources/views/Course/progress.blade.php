@@ -1,7 +1,7 @@
 <x-app-layout>
 
 
-    <section class="text-center py-10">
+    <section class="text-center py-10" style="background-color: #3AAFA9;">
         <h1 style="font-size: 4vw" class="text-4xl font-bold text-gray-800 mb-8">Your Progress</h1>
 
         <!-- Progress cards -->
