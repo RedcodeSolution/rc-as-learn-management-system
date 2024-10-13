@@ -49,7 +49,7 @@
                         <path fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="10, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831" />
                     </svg>
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <p class="text-sm">1 of 70</p>
+                        <p class="text-sm">{{$finalCountJs}} of 20</p>
                     </div>
                 </div>
                 <div>

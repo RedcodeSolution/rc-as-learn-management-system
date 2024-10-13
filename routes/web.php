@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CssFormController;
+use App\Http\Controllers\JavaScriptController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgressController;
 use Illuminate\Support\Facades\Route;
@@ -62,6 +63,8 @@ Route::get('/course/progress', [ProgressController::class, 'getResults']);
 Route::post('/course', [HtmlController::class, 'courseCreate']);
 
 Route::post('/cssForm', [CssFormController::class, 'courseCreate']);
+
+Route::post('/JsForm', [JavaScriptController::class, 'courseCreate']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

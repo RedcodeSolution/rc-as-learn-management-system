@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CssProgress;
 use App\Models\htmlprogress;
+use App\Models\JavaScriptProgress;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -29,7 +30,11 @@ class ProgressController extends Controller
 
         $finalCountCss = $userResultsCss->max('correct_count');
 
-        return view('Course.progress', ['finalCount' => $finalCount, 'finalCountCss' => $finalCountCss]);
+        $userResultsJs = JavaScriptProgress::where('user_id', $userId)->get();
+
+        $finalCountJs = $userResultsJs->max('correct_count');
+
+        return view('Course.progress', ['finalCount' => $finalCount, 'finalCountCss' => $finalCountCss,'finalCountJs' => $finalCountJs]);
 
 
       }
