@@ -15,7 +15,7 @@
                         <path fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="10, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831" />
                     </svg>
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <p class="text-sm">1 of 50</p>
+                        <p class="text-sm">{{ $finalCount }} of 50</p>
                     </div>
                 </div>
                 <div>
@@ -32,7 +32,7 @@
                         <path fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="10, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831" />
                     </svg>
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <p class="text-sm">1 of 45</p>
+                        <p class="text-sm">{{ $finalCountCss }} of 50</p>
                     </div>
                 </div>
                 <div>
