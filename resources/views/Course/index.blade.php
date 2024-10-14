@@ -4,7 +4,7 @@
             <div style="background-color: white; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; min-height: 100%;">
 
                 <div style="background-color: #3A6D8C; padding: 40px; width: 100%; height: 220px; display: flex; align-items: center; justify-content: space-between;">
-                    <a href="course/html" style="font-size: 50px; color: white; text-decoration: none; font-weight: bold;">
+                    <a href="{{ url('course/html') }}" style="font-size: 50px; color: white; text-decoration: none; font-weight: bold;">
                         {{ __("HTML") }}
                     </a>
                     <div style="display: flex; flex-direction: column; font-size: 30px; text-align: right;">
@@ -14,7 +14,7 @@
                 </div>
 
                 <div style="background-color: #ECDFCC; padding: 40px; width: 100%; height: 220px; display: flex; align-items: center; justify-content: space-between;">
-                    <a href="course/css" style="font-size: 50px; color: white; text-decoration: none; font-weight: bold;">
+                    <a href="{{ url('course/css') }}" style="font-size: 50px; color: white; text-decoration: none; font-weight: bold;">
                         {{ __("CSS") }}
                     </a>
                     <div style="display: flex; flex-direction: column; font-size: 30px; text-align: right;">
@@ -24,7 +24,7 @@
                 </div>
 
                 <div style="background-color: #598A8D; padding: 40px; width: 100%; height: 220px; display: flex; align-items: center; justify-content: space-between;">
-                    <a href="course/javascript" style="font-size: 50px; color: white; text-decoration: none; font-weight: bold;">
+                    <a href="{{ url('course/javascript') }}" style="font-size: 50px; color: white; text-decoration: none; font-weight: bold;">
                         {{ __("JAVASCRIPT") }}
                     </a>
                     <div style="display: flex; flex-direction: column; font-size: 30px; text-align: right;">
