@@ -12,7 +12,7 @@
         </div>
     </x-slot>
 
-    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl overflow-auto h-4/5">
+    <div class="flex flex-col items-center min-h-screen">
         <h1 class="text-5xl font-bold mb-6 text-center">JavaSript Quiz</h1>
 
 
