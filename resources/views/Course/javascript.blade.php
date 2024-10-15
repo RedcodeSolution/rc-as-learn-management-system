@@ -6,9 +6,7 @@
                 Progress
             </a>
 
-            <a href="/course/quiz" class="text-black px-8 py-2 rounded">
-                Quiz
-            </a>
+
         </div>
     </x-slot>
 

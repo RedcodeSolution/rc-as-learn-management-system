@@ -40,9 +40,10 @@ Route::get('/course/javascript', function () {
 })->middleware(['auth', 'verified'])->name('course.javascript');
 
 
-Route::get('/course/quiz', function () {
-    return view('Course.quiz');
-})->middleware(['auth', 'verified'])->name('course.quiz');
+//Route::get('/course/quiz', function () {
+//    return view('Course.quiz');
+//})->middleware(['auth', 'verified'])->name('course.quiz');
+
 
 //Result sheet HTML
 Route::get('course/course/course/HtmlPrograss', [ProgressController::class, 'getAll']);
