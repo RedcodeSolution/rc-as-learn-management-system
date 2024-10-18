@@ -1,1 +1,1 @@
-<img src="https://cdn.discordapp.com/attachments/1290620858318192697/1294221177144868864/CodeSchool.png?ex=670a38e6&is=6708e766&hm=e9ca0204895dd29976188381f35f1aab1ec1b4513c157254d537b1302441007c&" alt="New Image" width="100" height="100" />
+<img src="https://media.discordapp.net/attachments/1290620858318192697/1294221177144868864/CodeSchool.png?ex=670e2d66&is=670cdbe6&hm=3c8f46de96bcf10f4702f25ae5b9239ef8baa6ec8402d5f264191f73d379c8ac&=&format=webp&quality=lossless" alt="New Image" width="100" height="100" />

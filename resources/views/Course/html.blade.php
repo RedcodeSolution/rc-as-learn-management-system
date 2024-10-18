@@ -7,6 +7,13 @@
             </a>
 
         </div>
+
+        <div class="flex justify-end items-center" >
+            <a href="/course/quiz" class="text-black px-4 py-2 rounded">
+                quize
+            </a>
+
+        </div>
     </x-slot>
 
 <div class="flex flex-col items-center min-h-screen">
