@@ -5,12 +5,21 @@ namespace App\Http\Controllers;
 use App\Models\CssForm;
 use App\Models\CssProgress;
 use App\Models\htmlprogress;
+use App\Repositories\CssCourseServiceInterface;
 use Illuminate\Http\Request;
 
 
 
 class CssFormController extends Controller
 {
+
+    protected $cssCourseService;
+
+    public function __construct(CssCourseServiceInterface $cssCourseService)
+    {
+        $this->cssCourseService = $cssCourseService;
+    }
+
 
     public function courseCreate(Request $request)
     {
@@ -157,18 +166,19 @@ class CssFormController extends Controller
             }
 
             // Save each question result
-            CssProgress::create([
-                'question' => 'q' . ($index + 1), // Set the question identifier
+            $this->cssCourseService->saveProgress([
+                'question' => 'q' . ($index + 1),
                 'user_answer' => $userAnswer,
-                'correct_answer' => $correctAnswer, // This should not be null
+                'correct_answer' => $correctAnswer,
                 'is_correct' => $isCorrect,
                 'correct_count' => $correctCount,
                 'wrong_count' => $wrongCount,
-                'user_id' => $request->auth, // Assuming you have user authentication
+                'user_id' => $request->auth,
             ]);
-        }
 
-        // Return a response or some feedback here
-        return redirect('/course/progress');
+            // Return a response or some feedback here
+            return redirect('/course/progress');
+        }
     }
 }
+
