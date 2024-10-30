@@ -25,9 +25,11 @@ class ContactController extends Controller
             'subject' => $request->input('subject'),
         ];
 
+        // Use Mailtrap configuration from .env file
         Mail::send('emails.contact', $emailData, function ($message) use ($emailData) {
-            $message->to('vinugeena81@gmail.com')
-                ->subject('New Contact Form Submission');
+            $message->to(env('MAIL_FROM_ADDRESS'))  // This uses Mailtrap's 'from' address
+            ->subject('New Contact Form Submission')
+                ->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));  // Setting sender's email and name from .env
         });
 
         // Redirect back with a success message

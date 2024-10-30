@@ -11,8 +11,8 @@
             </a>
         </div>
     </x-slot>
-
-<div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl overflow-auto h-4/5">
+   <div class="flex items-center justify-center h-screen bg-gray-100">
+<div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl overflow-auto h-4/5 ">
         <h1 class="text-5xl font-bold mb-6 text-center">HTML Quiz</h1>
 
 
@@ -22,8 +22,13 @@
 <!--            <p class="text-5xl font-bold mb-6 text-center">-->
 <!--                {{auth()->user()->id}}-->
 <!--            </p>-->
+            <!-- Hidden field for auth -->
             <input type="hidden" name="auth" value="{{auth()->user()->id}}">
 
+            <!-- Two sections for the form content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Left Section -->
             <div class="space-y-2">
                 <p class="text-lg font-semibold">1. What does HTML stand for?</p>
                 <label><input type="radio" name="q1" value="Hyper Text Markup Language" class="mr-2"> Hyper Text Markup Language</label><br>
@@ -33,6 +38,7 @@
                 <span class="text-red text-sm" style="color: red">{{ $message }}</span>
                 @enderror
             </div>
+
 
             <div class="space-y-2">
                 <p class="text-lg font-semibold">2. Who is making the Web standards?</p>

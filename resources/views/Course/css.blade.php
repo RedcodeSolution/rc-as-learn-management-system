@@ -12,6 +12,7 @@
         </div>
     </x-slot>
 
+    <div class="flex items-center justify-center h-screen bg-gray-100">
     <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl overflow-auto h-4/5 ">
         <h1 class="text-5xl font-bold mb-6 text-center">CSS Quiz</h1>
 
@@ -23,6 +24,8 @@
 <!--                {{auth()->user()->id}}-->
 <!--            </p>-->
             <input type="hidden" name="auth" value="{{auth()->user()->id}}">
+            <!-- Two sections for the form content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Question 1 -->
             <div class="space-y-2">
                 <p class="text-lg font-semibold">1. What does CSS stand for?</p>

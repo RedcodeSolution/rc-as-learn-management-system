@@ -44,10 +44,15 @@ Route::get('/course/quiz', function () {
     return view('Course.quiz');
 })->middleware(['auth', 'verified'])->name('course.quiz');
 
+//Result sheet HTML
+Route::get('course/course/course/HtmlPrograss', [ProgressController::class, 'getAll']);
+//Result sheet CSS
+Route::get('/course/course/course/course/CssPrograss', [ProgressController::class, 'getAllCss']);
+//Result sheet JS
+Route::get('/course/course/course/JSPrograss', [ProgressController::class, 'getAllJs']);
 
 
 //
-
 
 Route::get('/contactUs', function () {
     return view('Contact Us.index');
