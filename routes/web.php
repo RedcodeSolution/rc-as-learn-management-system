@@ -5,6 +5,8 @@ use App\Http\Controllers\CssFormController;
 use App\Http\Controllers\JavaScriptController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgressController;
+use App\Http\Resources\UserResource;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HtmlController;
@@ -70,6 +72,10 @@ Route::post('/course', [HtmlController::class, 'courseCreate']);
 Route::post('/cssForm', [CssFormController::class, 'courseCreate']);
 
 Route::post('/JsForm', [JavaScriptController::class, 'courseCreate']);
+
+Route::get('/user/{id}', function (string $id) {
+    return new UserResource(User::findOrFail($id));
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
